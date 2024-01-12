@@ -56,7 +56,9 @@ This tool is written in JavaScript and depends on Node.js to run.
 *Procedure*
 
 ```
-npm i -g @jboxman/openshift-apidocs-gen
+git clone https://github.com/jab-rh/openshift-apidocs-gen.git
+npm i
+npm link
 ```
 
 ## CLI help
@@ -125,4 +127,4 @@ versions incremented, or APIs are dropped.
 ## Known issues
 
 For known issues, refer to
-[GitHub](https://github.com/jboxman/openshift-apidocs-gen/issues).
+[GitHub](https://github.com/jab-rh/openshift-apidocs-gen/issues).

@@ -16,14 +16,14 @@
     "kubernetes",
     "openapi"
   ],
-  "author": "Jason Boxman <jasonb@edseek.com> (http://linkedin.com/in/jboxman)",
+  "author": "Jason Boxman <jboxman@redhat.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jboxman/openshift-apidocs-gen.git"
+    "url": "git+https://github.com/jab-rh/openshift-apidocs-gen.git"
   },
   "bugs": {
-    "url": "https://github.com/jboxman/openshift-apidocs-gen/issues"
+    "url": "https://github.com/jab-rh/openshift-apidocs-gen/issues"
   },
   "dependencies": {
     "commander": "^5.1.0",
