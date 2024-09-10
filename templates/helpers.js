@@ -150,7 +150,7 @@ const createLinkToObject = config => schemaProps => {
   //if(!schemaProps.type) console.log(`${schemaProps['$ref']}:${schemaProps.type}`);
   const ref = config.refs[schemaProps['$ref'].replace('#/definitions/', '')];
   if(ref)
-    return `../${ref.path}/${ref.filename}#${ref.anchor}`;
+    return `../${ref.path}/${ref.filename}#${ref.anchor.split('.').join('-')}`;
 
   return '';
 }
@@ -165,7 +165,7 @@ const createLinkToObject = config => schemaProps => {
 const createLinkToResource = config => obj => {
   const ref = config.refs[obj.schemaId];
   if(ref)
-    return `./${ref.path}/${ref.filename}#${ref.anchor}`;
+    return `../${ref.path}/${ref.filename}#${ref.anchor}`;
 
   return '';
 }
